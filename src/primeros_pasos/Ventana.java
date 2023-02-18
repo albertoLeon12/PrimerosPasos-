@@ -1,8 +1,7 @@
+package primeros_pasos;
+
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -21,8 +20,9 @@ public class Ventana extends JFrame{
         setMinimumSize(new Dimension(200,200));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         conponentes();
-        
+        agregarMenu();
     }
+    
     public void conponentes(){
         panel = new JPanel();
         panel.setLayout(null);
@@ -32,8 +32,9 @@ public class Ventana extends JFrame{
         etiqueta.setText("Hola ya iniciamos nuestro curso de Topicos de Programacion");
         etiqueta.setBounds(100, 100, 400, 300);
         panel.add(etiqueta);
+        
     }
-    public void agregarmenu() {
+    public void agregarMenu() {
         JMenuBar barra= new JMenuBar();
         JMenu archivo= new JMenu("Archivo");
         JMenu ayuda= new JMenu("Ayuda");
@@ -47,7 +48,10 @@ public class Ventana extends JFrame{
         archivo.add(abrir);
         archivo.add(guardar);
         ayuda.add(acercaDe);
-        setJMenuBar(barra);        
+        setJMenuBar(barra);
+        
+        
+        
     }
     
 }

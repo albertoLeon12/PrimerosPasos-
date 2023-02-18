@@ -1,3 +1,4 @@
+package primeros_pasos;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -5,7 +6,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 public class Scroll {
-    private static final long serialVersionUID=1L;
     
     private static void createAndShowUGUI() {
         JFrame frame= new JFrame("Ejemplo de panel de desplazamiento"); 
